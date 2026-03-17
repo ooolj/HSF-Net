@@ -1,0 +1,3 @@
+﻿数据集,样本数,准确率,最佳类别,最佳类别准确率,最差类别,最差类别准确率
+验证集,2000,0.7465,normal-pylorus,0.9720,dyed-lifted-polyps,0.3960
+训练集,2000,0.8525,dyed-resection-margins,1.0000,dyed-lifted-polyps,0.4960

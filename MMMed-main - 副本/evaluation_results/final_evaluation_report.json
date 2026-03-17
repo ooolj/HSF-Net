@@ -1,0 +1,80 @@
+{
+  "model_info": {
+    "name": "HiFuse_Base",
+    "total_parameters": 134015210,
+    "trainable_parameters": 134015210,
+    "num_classes": 8,
+    "checkpoint": "D:\\BaiduNetdiskDownload\\MMMed\\MMMed-main\\model-weight\\checkpoint\\CT_maxvit.pth",
+    "device": "cuda:0"
+  },
+  "class_info": {
+    "class_indices": {
+      "0": "dyed-lifted-polyps",
+      "1": "dyed-resection-margins",
+      "2": "esophagitis",
+      "3": "normal-cecum",
+      "4": "normal-pylorus",
+      "5": "normal-z-line",
+      "6": "polyps",
+      "7": "ulcerative-colitis"
+    },
+    "class_names": [
+      "dyed-lifted-polyps",
+      "dyed-resection-margins",
+      "esophagitis",
+      "normal-cecum",
+      "normal-pylorus",
+      "normal-z-line",
+      "polyps",
+      "ulcerative-colitis"
+    ]
+  },
+  "evaluation_summary": [
+    {
+      "数据集": "验证集",
+      "样本数": 2000,
+      "准确率": "0.7465",
+      "最佳类别": "normal-pylorus",
+      "最佳类别准确率": "0.9720",
+      "最差类别": "dyed-lifted-polyps",
+      "最差类别准确率": "0.3960"
+    },
+    {
+      "数据集": "训练集",
+      "样本数": 2000,
+      "准确率": "0.8525",
+      "最佳类别": "dyed-resection-margins",
+      "最佳类别准确率": "1.0000",
+      "最差类别": "dyed-lifted-polyps",
+      "最差类别准确率": "0.4960"
+    }
+  ],
+  "evaluation_results": {
+    "验证集": {
+      "accuracy": 0.7465,
+      "class_accuracies": {
+        "dyed-lifted-polyps": 0.396,
+        "dyed-resection-margins": 0.82,
+        "esophagitis": 0.88,
+        "normal-cecum": 0.904,
+        "normal-pylorus": 0.972,
+        "normal-z-line": 0.784,
+        "polyps": NaN,
+        "ulcerative-colitis": 0.82
+      }
+    },
+    "训练集": {
+      "accuracy": 0.8525,
+      "class_accuracies": {
+        "dyed-lifted-polyps": 0.496,
+        "dyed-resection-margins": 1.0,
+        "esophagitis": 0.924,
+        "normal-cecum": 0.972,
+        "normal-pylorus": 0.996,
+        "normal-z-line": 0.952,
+        "polyps": NaN,
+        "ulcerative-colitis": 0.984
+      }
+    }
+  }
+}
